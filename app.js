@@ -144,3 +144,141 @@ document.write("Result: " + numStr + "<br>" + " <br>");
 
 // }
 
+// question # 15
+
+// var userPass = prompt("Enter your password")
+// if (userPass.length < 6) {
+//     userPass = prompt("Enter please 6 digits password")
+// }
+// else if (!isNaN(userPass.charAt(0))) {
+//     userPass = prompt("Please start as alphabet");
+// }
+// else if (!/^[a-zA-Z0-9]+$/.test(userPass)) {
+//     userPass = prompt("Enter only alphabets and numbers")
+// }
+// else {
+//     alert("Valid Password")
+// }
+
+// question # 16
+
+var university = "University of Karachi";
+
+var split = university.split([,]);
+
+for (i = 0; i < university.length; i++) {
+    document.write(university[i] + "<br>")
+}
+
+// question # 17
+
+// var userInput = prompt("Enter something");
+
+// var a = userInput.charAt(userInput.length - 1)
+// document.write("<br>" + "<br>"+"User input: ", userInput + "<br>");
+// document.write("Last character of input: ", a + "<br>" + "<br>");
+
+// question # 18
+
+var str = "the quick brown fox jumps over the lazy dog.";
+
+var a = (str.match(/the/g)).length
+document.write("<br>" + "<br>" + "Text: ", str + "<br>");
+document.write("There are ", + a + " occurrence(s) of word 'the'" + "<br>" + "<br>");
+
+
+// chap# 26 to 30
+
+// question # 1
+
+// var userInput = + prompt("Enter a positive integer");
+
+// var roundOf = Math.round(userInput);
+// var floor = Math.floor(userInput);
+// var ceil = Math.ceil(userInput);
+
+// document.write("number: " + userInput + "<br>")
+// document.write("round of value: " + roundOf + "<br>")
+// document.write("floor value: " + floor + "<br>")
+// document.write("ceil value: " + ceil + "<br>" + "<br>");
+
+// question # 2
+
+// var userInput = + prompt("Enter a negative floating point number");
+
+// var roundOf = Math.round(userInput);
+// var floor = Math.floor(userInput);
+// var ceil = Math.ceil(userInput);
+
+// document.write("number: " + userInput + "<br>")
+// document.write("round of value: " + roundOf + "<br>")
+// document.write("floor value: " + floor + "<br>")
+// document.write("ceil value: " + ceil + "<br>" + "<br>");
+
+// question # 3
+
+var a = -4;
+var x = Math.abs(a);
+
+document.write("The absolute value of " + a + " is " + x + "<br>" + "<br>")
+
+// question # 4
+
+var random = Math.random() * 6 + 1;
+
+document.write("random dice value: " + Math.floor(random) + "<br>" + "<br>")
+
+// question # 5
+
+var randomDice = Math.floor(Math.random() * 2) + 1;
+
+if (randomDice === 2) {
+    document.write(randomDice + "<br>")
+    document.write("random coin value: Heads" + "<br>" + "<br>")
+}
+else {
+    document.write(randomDice + "<br>")
+    document.write("random coin value: Tails" + "<br>" + "<br>")
+}
+
+// question # 6
+
+var random = Math.random() * 100 + 1;
+
+document.write("random number between 1 and 100: " + Math.floor(random) + "<br>" + "<br>");
+
+// question # 7
+
+// var userWeight = prompt("Enter your weight");
+// var parse = parseInt(userWeight)
+
+// document.write("The weight of user is ", parse, " kilograms")
+
+// question # 8
+
+// var inputSecNum = +prompt("Enter a number between 1 to 10");
+// var ranSecNum = Math.floor(Math.random() * 10) + 1;
+
+// if(inputSecNum===ranSecNum){
+//     document.write("congratulate the user")
+// }
+// else{
+//     document.write("Try again")
+// }
+
+
+// chap# 31 to 34
+
+// question # 1
+
+var currdate = new Date();
+document.write(currdate + "<br>" + "<br>");
+
+// question # 2
+
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+var date = new Date();
+var get = months[date.getMonth()];
+
+document.write("Current month: " + get + "<br>" + "<br>")
